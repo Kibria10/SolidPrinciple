@@ -10,6 +10,8 @@ public class Main {
 
         List<Object> shapes = List.of(circle, square);
         int sum = ac.sum(shapes);
-        System.out.println("Sum =" + sum);
+        System.out.println(ac.json(shapes));
+        System.out.println(ac.csv(shapes));
+
     }
 }

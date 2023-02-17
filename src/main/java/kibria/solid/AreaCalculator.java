@@ -18,4 +18,13 @@ public class AreaCalculator {
         }
         return sum;
     }
+
+    //Now suppose we want to print the values of the sum in json and csv format. So we are creating two more methods in AreaCalculator class
+    public String json(List<Object> shapes){
+        return String.format("{sum: %s}", sum(shapes));
+    }
+
+    public String csv(List<Object> shapes){
+        return String.format("{sum, %s}", sum(shapes));
+    }
 }
