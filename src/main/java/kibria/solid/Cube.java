@@ -1,6 +1,6 @@
 package kibria.solid;
 
-public class Cube implements Shape{
+public class Cube implements Shape, ThreeDimensional{
 
     private final int length;
 
@@ -15,5 +15,10 @@ public class Cube implements Shape{
     @Override
     public double area(){
         return 6*Math.pow(getLength(),2);
+    }
+
+    @Override
+    public double volume(){
+        return Math.pow(getLength(),3);
     }
 }
