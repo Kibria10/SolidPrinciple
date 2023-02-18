@@ -8,9 +8,10 @@ public class Main {
         Circle circle = new Circle(10);
         Square square = new Square(10);
         Cube cube = new Cube(12);
+        NoShape noShape = new NoShape();
         ShapesPrinter shapesPrinter = new ShapesPrinter();
 
-        List<Shape> shapes = List.of(circle, square, cube);
+        List<Shape> shapes = List.of(circle, square, cube, noShape);
         int sum = ac.sum(shapes);
         System.out.println(shapesPrinter.json(sum));
         System.out.println(shapesPrinter.csv(sum));
