@@ -15,6 +15,10 @@ public class AreaCalculator {
             if (shape instanceof Circle){
                 sum+= Math.PI * Math.pow(((Circle)shape).getRadius(),2);
             }
+            //OCP: we have a new shape: Cube. So calculate the area of cube we are extending our class. But this is breaking the principle.
+            if (shape instanceof Cube){
+
+            }
         }
         return sum;
     }
