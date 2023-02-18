@@ -7,12 +7,12 @@ public class Main {
         AreaCalculator ac = new AreaCalculator();
         Circle circle = new Circle(10);
         Square square = new Square(10);
+        Cube cube = new Cube(12);
         ShapesPrinter shapesPrinter = new ShapesPrinter();
 
-        List<Object> shapes = List.of(circle, square);
+        List<Shape> shapes = List.of(circle, square, cube);
         int sum = ac.sum(shapes);
         System.out.println(shapesPrinter.json(sum));
         System.out.println(shapesPrinter.csv(sum));
-
     }
 }
